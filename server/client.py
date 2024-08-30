@@ -1,15 +1,10 @@
 import keyboard
 import requests
-import sys
 
-if len(sys.argv) > 1:
-    ip = sys.argv[1]
-    print(f"LA IP DEL SERVER ES: {ip}")
-else:
-    print("No se ingresaron parametros.")
+hostname = "raspberrypi"
 
-
-url = 'http://'+str(ip)+':5000/pad_control'
+# IP: 192.168.0.27 (LAN) RASPBERRY
+url = 'http://'+hostname+':5000/pad_control'
 
 # Función para enviar la solicitud con la tecla presionada
 def send_key_request(key):
