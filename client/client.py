@@ -28,7 +28,7 @@ def on_key_event(event):
 # Configurar eventos para las teclas 'w', 'a', 's', 'd'
 keyboard.on_press_key('w', on_key_event)
 keyboard.on_press_key('a', on_key_event)
-keyboard.on_press_key('s', on_key_event)
+keyboard.on_press_key('k', on_key_event)
 keyboard.on_press_key('d', on_key_event)
 
 # Mantener el script corriendo
